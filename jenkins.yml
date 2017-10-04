@@ -1,0 +1,9 @@
+---
+- name: CI SERVER
+  hosts: 150.150.150.111
+  sudo: True
+  roles:
+   - role: ansible-role-jenkins
+     java_packages:
+        - java-1.8.0-openjdk
+   
